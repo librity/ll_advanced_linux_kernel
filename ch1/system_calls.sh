@@ -1,14 +1,3 @@
-sudo su
-
-# Browse installed kernel images
-cd /boot
-ls -l | grep vmlinuz
-
-# Hardware Info commands
-lspci | less
-lsusb | less
-lscpu | less
-
 # Explore kernel's unistd.h
 cd /usr/src/linux-headers-5.3.0-18/include/uapi/asm-generic
 wc -l unistd.h
